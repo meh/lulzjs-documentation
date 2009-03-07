@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<method name="create" parameters="[parent], description" return="Class">
+    <description><![CDATA[
+        The *create* method is the heart of the Class system, it takes
+        an optional parameter as the class that methods and attributes will be
+        inherited from.
+
+
+
+        The description parameter takes an object formatted like this:
+
+        -- javascript --
+        description = {
+            // This obviously is the class constructor that will be
+            // executed when you do `new ClassName(parameters)`.
+            constructor: function (parameters) {
+                // code
+            },
+
+            // This object keeps track of methods that are present in
+            // every instance of the class, in short the functions inside
+            // this object are added to the prototype.
+            methods: {
+                // The method's name is obviously the key name.
+                // Once you created an instance of the object you'll
+                // be able to call the aMethod method.
+                aMethod: function (parameters) {
+                    // code
+                },
+            },
+
+            // This object keeps track of methods and values that will
+            // be in the class variable, so they won't be present in the
+            // prototype.
+            static: {
+                // Same thing as the _methods_
+                aStaticMethod: function (parameters) {
+                    // code
+                }
+            },
+
+            // This object is cooler and really C#-like, attributes added
+            // here are added to the prototype.
+            attributes: {
+                // The object's key value is the attribute's name
+                anAttribute: {
+                    // The get key will be the getter
+                    get: function () {
+                        return this._anAttribute;
+                    },
+                    
+                    // The set key will be the setter
+                    set: function (value) {
+                        this._anAttribute = value * 2;
+                    }
+                },
+            }
+        }
+        ----
+    ]]></description>
+</method>

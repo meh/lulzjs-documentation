@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<page title="Class Object">
+    <![CDATA[
+        The Class object takes care of simplifying (or create? :P) object oriented programming
+        in Javascript, it takes parts from some languages like PHP and C#.<br/>
+        <br/>
+        With the Class object you can create classes and inherit from them like you would
+        do in other languages (sadly it's more Java-like).<br/>
+        <br/>
+        When a method is overrided you can still access the parent's method by setting
+        $super as first argument in a method, $super will be a reference to the parent's
+        method function with the same name as the overrided method.<br/>
+        You'll understand better in the examples at the end.<br/>
+    ]]>
+
+    <section type="properties">
+        <property name="superclass"/>
+        <property name="subclasses"/>
+    </section>
+
+    <section type="methods">
+        <method name="create"/>
+        <method name="addMethods"/>
+    </section>
+
+    <section type="examples">
+
+    </section>
+</page>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<property name="subclasses" type="Array">
+    <description><![CDATA[
+        The _subclasses_ property is an Array with all the classes that inherits
+        from the class.
+
+        If the class hasn't been inherited the array is empty.
+    ]]></description>
+</property>

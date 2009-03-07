@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<property name="superclass" type="Class | null">
+    <description><![CDATA[
+        The _superclass_ property is a reference to the parent class or null
+        if the class doesn't have one.
+    ]]></description>
+</property>
